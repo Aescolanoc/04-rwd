@@ -1,0 +1,32 @@
+/* Estilos comunes */
+
+main {
+  background-color: bisque;
+}
+
+section,
+aside {
+  border: 1px solid red;
+  margin: 0.2rem;
+  padding: 2em;
+  max-width: 500px;
+}
+
+@media (min-width: 580px) {
+  main {
+    display: flex;
+  }
+
+  section {
+    order: 1;
+  }
+}
+
+@media (min-width: 780px) {
+  aside {
+    width: 30%;
+  }
+  section {
+    width: 70%;
+  }
+}
